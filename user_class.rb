@@ -1,6 +1,6 @@
 class User
   def username
-    puts "Dee Del Rosario"
+    return "Dee Del Rosario"
   end
 
   def email

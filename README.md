@@ -1,2 +1,2 @@
-# first_class_ruby
-A playpen for the first time the group builds a class
+# User Class
+Feel free to use this repo to clone down the instructors' version of the code between lessons on classes!

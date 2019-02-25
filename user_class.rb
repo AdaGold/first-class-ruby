@@ -8,7 +8,7 @@ class User
   end
 
   def summary
-    return "#{name}: #{email}"
+    return "#{username}: #{email}"
   end
 end
 

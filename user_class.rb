@@ -1,7 +1,7 @@
 class User
   attr_reader :address, :name #, :email
 
-  attr_writer :pets#, :email
+  attr_writer :pets #, :email
 
   attr_accessor :email
 
@@ -34,7 +34,7 @@ class User
   # end
 
   def summary
-    return "#{name}: #{email} pets: #{@pets}"
+    return "#{name}: #{email} pets: #{@pets.name}"
   end
 end
 
@@ -42,7 +42,7 @@ class Cat
   attr_accessor :name
   attr_reader :fur_type
 
-  def initialize name: "Meowtimer", fur_type: "black"
+  def initialize(name: "Meowtimer", fur_type: "black")
     @name = name
     @fur_type = fur_type
   end
@@ -51,7 +51,7 @@ class Cat
     puts "#{self.name} is lounging"
   end
 
-  def play some_other_cat
+  def play(some_other_cat)
     puts "#{self.name} is playing with #{some_other_cat.name}"
   end
 end
@@ -63,15 +63,14 @@ tortie = Cat.new(name: "Tonks", fur_type: "Tortoiseshell")
 calico.play(tortie)
 tortie.play(calico)
 
-
 # def add_idk (value)
 #   newthing = value
 # end
 
-# dee = User.new(name: "Amy", email: "amysemail@amy.net")
+dee = User.new(name: "Amy", email: "amysemail@amy.net")
 # puts "#{dee.address}"
-# dee.pets = "Samson"
-# puts "#{dee.summary}"
+dee.pets = calico
+puts "#{dee.summary}"
 
 # dee.address = "home"
 
